@@ -1,0 +1,220 @@
+a, a:visited, a:active {
+	text-decoration: none;
+	color: #0e78a0;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #012985;
+}
+
+#main {
+	width: 900px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -450px;
+	padding: 20px;
+}
+
+#main_head {
+	color: #0e78a0;
+	font-family: Tahoma, Arial;
+	font-size: 30px;
+	margin: 0 10px 0 0;
+}
+
+#footer {
+	color: #0e78a0;
+	font-family: Tahoma, Arial;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.progress {
+	border: 1px solid #6a99b3;
+	background: #9dceea;
+	padding: 5px;
+	margin: 5px;
+	text-align: center;
+	width: 60px;
+	float: left;
+}
+
+.success {
+	color: #0e78a0;
+	font-family: Tahoma, Arial;
+	font-size: 30px;
+}
+
+.padding-20 {
+	padding: 20px;
+}
+
+.padding-5 {
+	padding: 5px;
+}
+
+.margin-5 {
+	margin: 5px;
+}
+
+.num {
+	color: #0e78a0;
+	font-family: Tahoma, Arial;
+	font-size: 30px;
+	float: left;
+}
+
+.field {
+	padding: 0 40px 0 40px;
+}
+
+.scribe {
+	color: gray;
+	font-family: Tahoma, Arial;
+	font-size: 14px;
+	font-weight: bold;	
+}
+
+.scribe_big {
+	color: #A37272;
+	font-family: Tahoma, Arial;
+	font-size: 30px;
+}
+
+.big {
+	height: 170px;
+}
+
+.error {
+	padding: 20px;
+	color: red;
+	font-family: Tahoma, Arial;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.mail {
+	padding: 5px;
+	color: gray;
+	font-family: Tahoma, Arial;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.float {
+	float: left;
+}
+
+table.themes_check {
+	border-width: 1px;
+	border-spacing: 0px;
+	border-style: outset;
+	border-color: #a37272;
+	border-collapse: collapse;
+}
+table.themes_check th {
+	border-width: 1px;
+	padding: 3px;
+	border-style: groove;
+	border-color: #808080;
+	background-color: #BBDCED;
+}
+table.themes_check td {
+	border-width: 1px;
+	padding: 3px;
+	border-style: groove;
+	border-color: #808080;
+	color: #414141;
+	font-family: Tahoma, Arial;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.coloring   {
+    cursor: default;
+}
+.colored_row    {
+    background-color: #9DD1ED;
+}
+.uncolored_row    {
+    background-color: #BBDCED;
+}
+.checked_row    {
+    background-color: #CEE2ED;
+}
+
+.site_name {
+	color: black;
+	font-family: Tahoma, Arial;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.site_podname {
+	color: gray;
+	font-family: Tahoma, Arial;
+	font-size: 11px;
+	font-weight: bold;
+	padding-left: 5px;
+}
+
+table.sites tr td.nolast{
+	border-bottom: 1px dotted #3479A3;
+	padding: 5px;
+}
+
+table.sites tr td.last{
+	padding: 5px;
+}
+
+.delim {
+	height: 1px;
+	width: 100%;
+	font-size: 0%;
+	background: #3479A3;
+}
+
+.box {
+	border: 1px solid #3479A3;
+	display: none;
+}
+.box.visible {
+	display: block;
+}
+
+/* SQUIRM */
+
+form {
+	padding: 0; margin: 0;
+}
+
+.border {
+	border: 1px solid gray;
+}
+
+#showMessage {
+	position: absolute;
+	top: 0; left: 0;
+	width: 100%;
+	height: 100px;
+	line-height: 90px;
+	background: #86C4E7;
+	z-index: 100;
+	text-align: center;
+	font-family: Tahoma;
+	font-size: 50px;
+	font-weight: bold;
+	display: none;
+}
+
+.bg3 {background: #AAD5ED;}
+.row {background: #B2D6EA;}
+
+.blue {color: #3479A3;}
+.red , a.red:hover{color: #D72D2D;}
+.black {color: #000000;}
+
+.w300 {width: 300px;}
+.w500 {width: 420px;}
