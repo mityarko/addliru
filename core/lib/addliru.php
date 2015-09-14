@@ -1,15 +1,15 @@
 <?php
 set_time_limit(0);
 function addliru($url, $pass="pass", $mail="mail@mail.ru") {
-	$ch = curl_init(); // Èíèöèàëèçèðóåì ñåññèþ	
-	curl_setopt($ch, CURLOPT_URL, 'http://www.liveinternet.ru/add'); // çàäàåì àäðåñ ôîðìû
-	curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); // Ðåçóëüòàò íàì íóæíî âåðíóòü â ïåðåìåííóþ, à íå íà ýêðàí
-	curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1); // Ïåðåõîäèòü ïî ðåäèðåêòàì
+	$ch = curl_init(); // Ð˜Ð½Ð¸Ñ†Ð¸Ð°Ð»Ð¸Ð·Ð¸Ñ€ÑƒÐµÐ¼ ÑÐµÑÑÐ¸ÑŽ	
+	curl_setopt($ch, CURLOPT_URL, 'http://www.liveinternet.ru/add'); // Ð·Ð°Ð´Ð°ÐµÐ¼ Ð°Ð´Ñ€ÐµÑ Ñ„Ð¾Ñ€Ð¼Ñ‹
+	curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); // Ð ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚ Ð½Ð°Ð¼ Ð½ÑƒÐ¶Ð½Ð¾ Ð²ÐµÑ€Ð½ÑƒÑ‚ÑŒ Ð² Ð¿ÐµÑ€ÐµÐ¼ÐµÐ½Ð½ÑƒÑŽ, Ð° Ð½Ðµ Ð½Ð° ÑÐºÑ€Ð°Ð½
+	curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1); // ÐŸÐµÑ€ÐµÑ…Ð¾Ð´Ð¸Ñ‚ÑŒ Ð¿Ð¾ Ñ€ÐµÐ´Ð¸Ñ€ÐµÐºÑ‚Ð°Ð¼
 	curl_setopt($ch, CURLOPT_USERAGENT, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; ru; rv:1.9.0.3) Gecko/2008092417 Firefox/3.0.3 YB/3.5.3'); 
 	curl_setopt($ch, CURLOPT_COOKIESESSION, 1); 
-	curl_setopt($ch, CURLOPT_POST, 1); // Óêàçûâàåì, ÷òî íàì íóæíî îòïðàâèòü POST-çàïðîñ
-	curl_setopt($ch, CURLOPT_COOKIEJAR, $_SERVER['DOCUMENT_ROOT'].'/cookies.txt'); // Óêàçûâàåì ôàéë äëÿ õðàíåíèÿ êóêèñîâ	
-	curl_setopt($ch, CURLOPT_COOKIEFILE, $_SERVER['DOCUMENT_ROOT'].'/cookies.txt'); // Óêàçûâàåì ôàéë äëÿ õðàíåíèÿ êóêèñîâ	
+	curl_setopt($ch, CURLOPT_POST, 1); // Ð£ÐºÐ°Ð·Ñ‹Ð²Ð°ÐµÐ¼, Ñ‡Ñ‚Ð¾ Ð½Ð°Ð¼ Ð½ÑƒÐ¶Ð½Ð¾ Ð¾Ñ‚Ð¿Ñ€Ð°Ð²Ð¸Ñ‚ÑŒ POST-Ð·Ð°Ð¿Ñ€Ð¾Ñ
+	curl_setopt($ch, CURLOPT_COOKIEJAR, $_SERVER['DOCUMENT_ROOT'].'/cookies.txt'); // Ð£ÐºÐ°Ð·Ñ‹Ð²Ð°ÐµÐ¼ Ñ„Ð°Ð¹Ð» Ð´Ð»Ñ Ñ…Ñ€Ð°Ð½ÐµÐ½Ð¸Ñ ÐºÑƒÐºÐ¸ÑÐ¾Ð²	
+	curl_setopt($ch, CURLOPT_COOKIEFILE, $_SERVER['DOCUMENT_ROOT'].'/cookies.txt'); // Ð£ÐºÐ°Ð·Ñ‹Ð²Ð°ÐµÐ¼ Ñ„Ð°Ð¹Ð» Ð´Ð»Ñ Ñ…Ñ€Ð°Ð½ÐµÐ½Ð¸Ñ ÐºÑƒÐºÐ¸ÑÐ¾Ð²	
 	$post = array(
 		'rules' => 'agreed',
 		'type' => 'site',
@@ -25,7 +25,7 @@ function addliru($url, $pass="pass", $mail="mail@mail.ru") {
 		'private' => 'on',
 		'subscribe' => 'off',
 		'www' => '',
-		'confirmed' => ' çàðåãèñòðèðîâàòü &gt;&gt; '
+		'confirmed' => ' Ð·Ð°Ñ€ÐµÐ³Ð¸ÑÑ‚Ñ€Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ >> '
 	);
 	curl_setopt($ch, CURLOPT_POSTFIELDS, $post);	
 	$html = curl_exec($ch); //1
